@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  margin-right: 3em;
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #64ff95aa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #5ebd82aa);
+}
+
+.card {
+  display: flex;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #root {
+    max-width: 100%;
+  }
+  .logo {
+    margin-right: 1em;
+    height: 4em;
+  }
+}
+
